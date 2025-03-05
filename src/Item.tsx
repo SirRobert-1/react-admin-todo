@@ -63,6 +63,7 @@ export const Item = () => {
           type="checkbox"
           onChange={handleChangeCompleted}
           checked={todo.completed}
+          aria-label="Toggle todo item completion status"
         />
         <label onDoubleClick={handleStartEdit}>{todo.title}</label>
         <button onClick={handleDelete} className="destroy" />
