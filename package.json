@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/manifest.webmanifest dist/manifest.json",
     "deploy": "gh-pages -d dist",
     "serve": "vite preview",
     "type-check": "tsc --noEmit",
@@ -35,7 +35,8 @@
     "jsdom": "^24.1.1",
     "prettier": "^3.3.3",
     "typescript": "^5.1.6",
-    "vite": "^5.3.5"
+    "vite": "^5.3.5",
+    "vite-plugin-pwa": "^0.21.1"
   },
   "name": "todoapp"
 }
