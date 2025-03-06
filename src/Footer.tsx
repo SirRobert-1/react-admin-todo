@@ -59,7 +59,7 @@ export const Footer = () => {
         </li>
       </ul>
 
-      {total && (
+      {total != null && (
         <button className="clear-completed" onClick={handleClearCompleted}>
           Clear completed
         </button>
