@@ -1,4 +1,4 @@
-import fakeRestDataProvider from "ra-data-local-forage";
+import localforageDataProvider from "ra-data-local-forage";
 import localforage from "localforage";
 
 const data = {
@@ -26,7 +26,7 @@ localforage.config({
   name: "react-admin-todo",
 });
 
-export const dataProvider = fakeRestDataProvider({
+export const dataProvider = localforageDataProvider({
   defaultData: data,
   loggingEnabled: process.env.NODE_ENV !== "test",
 });

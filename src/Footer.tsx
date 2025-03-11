@@ -34,7 +34,10 @@ export const Footer = () => {
               ),
             })}
             href="#"
-            onClick={() => setFilters({})}
+            onClick={(event) => {
+              setFilters({});
+              event.preventDefault();
+            }}
           >
             All
           </a>
@@ -43,7 +46,10 @@ export const Footer = () => {
           <a
             className={clsx({ selected: filterValues.completed === false })}
             href="#"
-            onClick={() => setFilters({ completed: false })}
+            onClick={(event) => {
+              setFilters({ completed: false });
+              event.preventDefault();
+            }}
           >
             Active
           </a>
@@ -52,7 +58,10 @@ export const Footer = () => {
           <a
             className={clsx({ selected: filterValues.completed === true })}
             href="#"
-            onClick={() => setFilters({ completed: true })}
+            onClick={(event) => {
+              setFilters({ completed: true });
+              event.preventDefault();
+            }}
           >
             Completed
           </a>
