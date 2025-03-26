@@ -17,6 +17,7 @@
     "ra-data-local-forage": "^5.6.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "todoapp": "file:",
     "todomvc-app-css": "^2.4.3",
     "todomvc-common": "^1.0.5"
   },
