@@ -19,12 +19,12 @@ export const Footer = () => {
 
   return (
     <footer className="footer">
-      <span className="todo-count">
+      <span className="todo-count" style={{ color: "blue", fontSize: "20px" }}>
         <strong>{total}</strong>
         {total === 1 ? " item" : " items"} left
       </span>
 
-      <ul className="filters">
+      <ul className="filters" style={{ color: "blue", fontSize: "16px" }}>
         <li>
           <a
             className={clsx({
@@ -69,7 +69,11 @@ export const Footer = () => {
       </ul>
 
       {total != null && (
-        <button className="clear-completed" onClick={handleClearCompleted}>
+        <button
+          className="clear-completed"
+          onClick={handleClearCompleted}
+          style={{ color: "blue" }}
+        >
           Clear completed
         </button>
       )}

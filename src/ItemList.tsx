@@ -8,7 +8,7 @@ export const ItemList = () => {
   if (isPending || error) return null;
 
   return (
-    <ul className="todo-list">
+    <ul className="todo-list" style={{ fontSize: "20px" }}>
       {data.map((todo) => (
         <RecordContextProvider value={todo} key={todo.id}>
           <Item />

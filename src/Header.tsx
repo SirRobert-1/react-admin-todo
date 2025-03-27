@@ -16,8 +16,19 @@ export const Header = () => {
   };
 
   return (
-    <header className="header">
-      <h1>todos</h1>
+    <header
+      className="header"
+      style={{ textAlign: "center", marginBottom: "20px" }}
+    >
+      <h1
+        style={{
+          fontSize: "40px",
+          fontWeight: "bold",
+          lineHeight: "1.2",
+        }}
+      >
+        Lista de tareas para salvar el semestre
+      </h1>
 
       <input
         className="new-todo"

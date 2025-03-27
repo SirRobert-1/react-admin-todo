@@ -7,7 +7,7 @@ import "./app.css";
 export const Layout = ({ children }: { children: ReactNode }) => (
   <>
     <section className="todoapp">{children}</section>
-    <footer className="info">
+    <footer className="info" style={{ fontWeight: "bold", fontSize: "14px" }}>
       <p>Double-click to edit a todo</p>
       <p>
         Created by the{" "}
